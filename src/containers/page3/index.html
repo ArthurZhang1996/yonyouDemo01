@@ -1,0 +1,25 @@
+<div class="page3 u-mdlayout" id='page3'>
+
+    <div class="u-mdlayout-detail">
+        <div class="u-mdlayout-page current" id='defultPage'>
+            <h2>页面三</h2>
+            <input id="test1" /><br/>
+            <input type="button" name="button" value="点我" id='ShowCardBtn'>
+
+            <div class="u-combo" id='province' style="margin: 10px" u-meta='{"id":"dt1","type":"u-combobox","data":"testDataTable","field":"name","datasource":"province"}'>
+                <div class="u-input-group u-has-feedback">
+                    <div class="u-input-group-before" style="color: red;">*</div>
+                    <input class="u-form-control" />
+                    <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="u-mdlayout-page" id='cardForPage3'>
+            <h1>我的</h1>
+            <p style="color:red" data-bind="text:testDataTable.ref('name')"></p>
+
+            <input type="button" name="button" value="返回" id='showMainPanel'>
+        </div>
+    </div>
+</div>
